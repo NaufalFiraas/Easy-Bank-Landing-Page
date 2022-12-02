@@ -43,7 +43,6 @@
     }
 
     .right-side {
-        z-index: 0;
         position: relative;
         width: 62%;
         display: block;
@@ -54,12 +53,10 @@
 
         img {
             position: absolute;
-            // left: 210px;
             right: -100px;
             top: -100px;
             height: 750px;
             width: 600px;
-            z-index: 1;
         }
     }
 
