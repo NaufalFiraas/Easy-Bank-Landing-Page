@@ -344,5 +344,48 @@ nav #nav-button:hover::after {
     width: 400px;
   }
 }
+#why {
+  background-color: hsl(220deg, 16%, 96%);
+  padding: 0 10rem;
+}
+#why .why-heading {
+  width: 50%;
+  padding: 5rem 0;
+}
+#why .why-heading h1 {
+  font-size: 2rem;
+  color: hsl(233deg, 26%, 24%);
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+#why .why-heading p {
+  color: hsl(233deg, 8%, 62%);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+#why .why-bottom {
+  padding: 0 0 5rem 0;
+  display: flex;
+  gap: 20px;
+}
+#why .why-bottom .card {
+  height: 17em;
+}
+#why .why-bottom .card img {
+  width: 5em;
+  height: 5em;
+  margin-bottom: 15px;
+}
+#why .why-bottom .card h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: hsl(233deg, 26%, 24%);
+  margin-bottom: 15px;
+}
+#why .why-bottom .card p {
+  font-size: 1.1rem;
+  color: hsl(233deg, 8%, 62%);
+  line-height: 1.5;
+}
 
 /*# sourceMappingURL=main.css.map */

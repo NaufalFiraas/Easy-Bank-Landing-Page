@@ -1,0 +1,56 @@
+@use '../../variables';
+
+#why {
+    background-color: variables.$lightGrayishBlue;
+    padding: 0 10rem;
+
+    .why-heading {
+        // background-color: red;
+        width: 50%;
+        padding: 5rem 0;
+
+        h1 {
+            font-size: 2rem;
+            color: variables.$darkBlue;
+            font-weight: 400;
+            margin-bottom: 25px;
+        }
+
+        p {
+            color: variables.$grayishBlue;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+    }
+
+    .why-bottom {
+        // background-color: blue;
+        padding: 0 0 5rem 0;
+        display: flex;
+        gap: 20px;
+
+        .card {
+            // background-color: yellow;
+            height: 17em;
+
+            img {
+                width: 5em;
+                height: 5em;
+                margin-bottom: 15px;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+                font-weight: 400;
+                color: variables.$darkBlue;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 1.1rem;
+                color: variables.$grayishBlue;
+                line-height: 1.5;
+            }
+        }
+    }
+}
