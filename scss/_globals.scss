@@ -8,3 +8,10 @@
     box-sizing: border-box;
     font-family: variables.$publicSans;
 }
+
+body {
+    .content-container {
+        overflow: hidden;
+        height: 2000px;
+    }
+}

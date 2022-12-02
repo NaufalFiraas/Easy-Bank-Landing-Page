@@ -4,6 +4,7 @@
     nav {
         background-color: white;
         padding: 0 5rem;
+        z-index: 99;
 
         .toggle {
             order: 2;
@@ -56,10 +57,10 @@
             gap: 0;
             align-items: center;
             height: 40vh;
-            z-index: 2;
-            transform: scale(0);
+            z-index: 99;
+            transform: translateY(-1500px);
             opacity: 0;
-            transition: all 0.5s ease;
+            transition: all 0.7s ease;
 
             li {
                 a {
@@ -70,7 +71,7 @@
 
             &.active {
                 opacity: 1;
-                transform: scale(1);
+                transform: translateY(0);
             }
         }
 
@@ -83,10 +84,10 @@
             height: fit-content;
             bottom: 0;
             left: 0;
-            z-index: 2;
+            z-index: 99;
             transform: translateY(200px);
             opacity: 1;
-            transition: all 0.4s ease;
+            transition: all 0.7s ease;
 
             &.active {
                 opacity: 1;
@@ -103,14 +104,15 @@
             position: absolute;
             top: 52px;
             left: 0;
-            z-index: 0;
+            transform: translateY(-1500px);
             opacity: 0;
-            transition: all 0.4s ease;
+            transition: all 0.7s ease;
         }
 
         &.active::after {
             display: block;
             opacity: 1;
+            transform: translateY(0);
         }
 
         &.active {

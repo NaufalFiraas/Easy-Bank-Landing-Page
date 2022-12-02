@@ -1,0 +1,31 @@
+@use 'variables';
+// button request invite styling
+
+@mixin btnRequestInvite() {
+    position: relative;
+    padding: 12px 30px;
+    margin: 20px 0;
+    border-radius: 50px;
+    color: variables.$lightGrayishBlue;
+    font-weight: 600;
+    font-size: 18px;
+    background: linear-gradient(to right, variables.$limeGreen, variables.$brightCyan);
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+@mixin btnRequestInviteAfter() {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50px;
+    background-color: #ffffff60;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateX(-500px);
+    transition: all 0.2s ease-in-out;
+}
