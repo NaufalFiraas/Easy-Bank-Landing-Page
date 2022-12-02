@@ -9,7 +9,7 @@
 
 body .content-container {
   overflow: hidden;
-  height: 2000px;
+  height: 5000px;
 }
 
 nav {
@@ -179,7 +179,7 @@ nav #nav-button:hover::after {
     display: block;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to bottom, #2d314d, rgba(255, 255, 255, 0.5647058824));
+    background-image: linear-gradient(to bottom, rgba(45, 49, 77, 0.5843137255), #ffffff);
     position: absolute;
     top: 52px;
     left: 0;
@@ -342,6 +342,82 @@ nav #nav-button:hover::after {
   #jumbotron .right-side img {
     height: 450px;
     width: 400px;
+  }
+}
+#why {
+  background-color: hsl(220deg, 16%, 96%);
+  padding: 0 10rem;
+}
+#why .why-heading {
+  width: 50%;
+  padding: 5rem 0;
+}
+#why .why-heading h1 {
+  font-size: 2rem;
+  color: hsl(233deg, 26%, 24%);
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+#why .why-heading p {
+  color: hsl(233deg, 8%, 62%);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+#why .why-bottom {
+  padding: 0 0 5rem 0;
+  display: flex;
+  gap: 20px;
+}
+#why .why-bottom .card {
+  height: 17em;
+}
+#why .why-bottom .card img {
+  width: 5em;
+  height: 5em;
+  margin-bottom: 15px;
+}
+#why .why-bottom .card h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: hsl(233deg, 26%, 24%);
+  margin-bottom: 15px;
+}
+#why .why-bottom .card p {
+  font-size: 1.1rem;
+  color: hsl(233deg, 8%, 62%);
+  line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+  #why {
+    padding: 0 5rem;
+  }
+}
+@media (max-width: 1000px) {
+  #why .why-heading {
+    width: 100%;
+    text-align: center;
+    padding: 5rem 0 2.5rem 0;
+  }
+  #why .why-heading h1 {
+    font-size: 1.8rem;
+  }
+  #why .why-bottom {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 1.8rem 0;
+  }
+  #why .why-bottom .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 580px) {
+  #why {
+    padding: 0 1.37rem;
   }
 }
 
