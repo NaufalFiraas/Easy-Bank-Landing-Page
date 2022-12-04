@@ -1,0 +1,99 @@
+@use '../../variables';
+@use '../../mixins';
+
+footer {
+    width: 100vw;
+    background-color: variables.$darkBlue;
+    padding: 3rem 10rem;
+    display: flex;
+    justify-content: space-between;
+
+    .footer-left {
+        // background-color: #ffff0050;
+        flex: 2;
+        display: flex;
+
+        .first {
+            flex: 1;
+            // background-color: #ff000050;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            img {
+                width: 150px;
+                height: 23px;
+            }
+
+            a {
+                font-size: 1.3rem;
+                color: variables.$lightGrayishBlue;
+                margin-right: 10px;
+
+                &:hover {
+                    color: variables.$limeGreen;
+                }
+            }
+        }
+
+        .second {
+            flex: 1;
+            // background-color: #00800050;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 80px;
+
+            a {
+                color: variables.$lightGrayishBlue;
+
+                &:hover {
+                    color: variables.$limeGreen;
+                }
+            }
+        }
+
+        .third {
+            flex: 1;
+            // background-color: #ffffff50;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            a {
+                color: variables.$lightGrayishBlue;
+                text-align: left;
+            
+                &:hover {
+                    color: variables.$limeGreen;
+                }
+            }
+        }
+    }
+
+    .footer-right {
+        // background-color: #ffffff50;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-end;
+
+        button {
+            @include mixins.btnRequestInvite();
+
+            &::after {
+                @include mixins.btnRequestInviteAfter();
+            }
+
+            &:hover::after {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        p {
+            color: variables.$grayishBlue;
+        }
+    }
+}
