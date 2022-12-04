@@ -535,6 +535,7 @@ footer .footer-left .second {
 }
 footer .footer-left .second a {
   color: hsl(220deg, 16%, 96%);
+  width: fit-content;
 }
 footer .footer-left .second a:hover {
   color: hsl(136deg, 65%, 51%);
@@ -548,6 +549,7 @@ footer .footer-left .third {
 footer .footer-left .third a {
   color: hsl(220deg, 16%, 96%);
   text-align: left;
+  width: fit-content;
 }
 footer .footer-left .third a:hover {
   color: hsl(136deg, 65%, 51%);
@@ -592,6 +594,49 @@ footer .footer-right button:hover::after {
 }
 footer .footer-right p {
   color: hsl(233deg, 8%, 62%);
+}
+
+@media (max-width: 1100px) {
+  footer {
+    flex-direction: column;
+    padding: 3rem 5rem;
+  }
+  footer .footer-right {
+    align-items: center;
+  }
+  footer .footer-right p {
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  footer .footer-left {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer-left .first img {
+    margin-bottom: 30px;
+  }
+  footer .footer-left .first .icons {
+    margin-bottom: 30px;
+  }
+  footer .footer-left .second {
+    padding-left: 0;
+  }
+  footer .footer-left .second a {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  footer .footer-left .third a {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (max-width: 580px) {
+  footer {
+    padding: 3rem 1.37rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
